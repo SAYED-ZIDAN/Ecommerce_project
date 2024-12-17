@@ -1,0 +1,406 @@
+.container{
+    padding:0 130px;
+}
+header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top:30px;
+    font-size:22px;
+}
+header .logo{
+    font-weight:bold;
+    font-size:25px;
+}
+header .list ul{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    gap:60px;
+}
+header .list ul li {
+    position:relative;
+}
+header .list ul li a{
+    text-decoration: none;
+    color:black;
+    transition: 0.3s;
+}
+header .list ul li a:hover{
+    color:#DB4444;
+}
+header .list ul li a.active{
+    color:#DB4444;
+}
+header .list ul li a.active::after,
+header .list ul li a:hover::after
+{
+    position:absolute;
+    content:"";
+    width:50%;
+    height:2px;
+    bottom:-4px;
+    left:0px;
+    background-color:#DB4444;
+}
+header .right{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .right .input input{
+    outline:none;
+    border:none;
+    padding:10px;
+    background-color: #F5F5F5;
+    border-radius:3px;
+}
+header .right .icons ul{
+    list-style-type: none;
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+header .right .icons ul li:first-child{
+    background-color: #F5F5F5;
+    height:45px;
+    width:45px;
+    position:relative;
+    right:42px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 0px 3px 3px 0;
+}
+.container main .information{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container main .information .left{
+    width:60%;
+}
+.container main .information .left h1{
+    font-size:40px;
+}
+.container main .information .left p{
+    font-size:22px;
+}
+
+.container main .information .right .image{
+    width:40%;
+}
+.container main .information .right .image img{
+    width:600px;
+    min-height:300px;
+    margin-top:40px;
+}
+.features {
+    margin-top:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.features .one,
+.features .two,
+.features .three,
+.features .four{
+    width:250px;
+    height:200px;
+    border:2px solid #8b8b8b;
+    border-radius:3px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition:0.3s;
+}
+.features .one i,
+.features .two i,
+.features .three i,
+.features .four i{
+    font-size:28px;
+    margin-top:20px;
+    margin-bottom:25px;
+    background-color: black;
+    color:white;
+    width:60px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    position:relative;
+}
+.features .one i::after,
+.features .two i::after,
+.features .three i::after,
+.features .four i::after{
+    position:absolute;
+    content:"";
+    width:130%;
+    height:130%;
+    right:-9px;
+    top:-8px;
+    background-color: #bababa;
+    z-index: -5;
+    border-radius: 50%;
+}
+.features .one span,
+.features .two span,
+.features .three span,
+.features .four span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.features .one:hover,
+.features .two:hover,
+.features .three:hover,
+.features .four:hover{
+    background-color: #DB4444;
+    color:white;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+}
+.features .one:hover i,
+.features .two:hover i,
+.features .three:hover i,
+.features .four:hover i
+{
+    background-color: white;
+    color:black;
+}
+.feedback {
+    margin-top:150px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feedback .card1,
+.feedback .card2,
+.feedback .card3{
+    width:33%;
+}
+.feedback .card1 .image,
+.feedback .card2 .image,
+.feedback .card3 .image{
+    width:400px;
+    height:450px;
+    background-color: #e4e4e4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.feedback .card1 .image img,
+.feedback .card3 .image img{
+    height:90%;
+    position: absolute;
+    bottom:0;
+}
+.feedback .card2 .image img{
+    height:100%;
+    position:absolute;
+    bottom:0;
+}
+.feedback .card1 h2,
+.feedback .card2 h2,
+.feedback .card3 h2{
+    font-weight:normal;
+    letter-spacing: 2px;
+    font-size:30px;
+}
+.feedback .card1 .social,
+.feedback .card2 .social,
+.feedback .card3 .social{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    margin-top:25px;
+}
+.feedback .card1 .social a,
+.feedback .card2 .social a,
+.feedback .card3 .social a{
+    font-size:22px;
+    transition:0.3s;
+    color:black;
+}
+.feedback .card1 .social a:hover,
+.feedback .card2 .social a:hover,
+.feedback .card3 .social a:hover{
+    color:#DB4444;
+}
+.features{
+    margin-top:200px;
+    width:100%;
+}
+.features .deto{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:90px;
+}
+.features .deto .first,
+.features .deto .second,
+.features .deto .third{
+    text-align: center;
+}
+.features .deto .first i,
+.features .deto .second i,
+.features .deto .third i{
+    font-size:30px;
+    background-color: black;
+    padding:10px;
+    border-radius: 50%;
+    color:white;
+    position:relative;
+}
+.features .deto .first i::after,
+.features .deto .second i::after,
+.features .deto .third i::after{
+    position:absolute;
+    content:"";
+    width:140%;
+    height:140%;
+    background-color: #898989;
+    bottom:-10px;
+    right:-10px;
+    border-radius: 50%;
+    z-index: -5;
+}
+.features .deto .first h4,
+.features .deto .second h4,
+.features .deto .third h4{
+    font-size:20px;
+    font-weight: bold;
+}
+.features .deto .first p,
+.features .deto .second p,
+.features .deto .third p{
+    font-size: 18px;
+}
+footer{
+    margin-top:150px;
+    width:100%;
+    min-height:400px;
+    background-color: black;
+    color:white;
+}
+footer .container .con{
+    display:flex;
+    justify-content: space-between;
+    padding-top:60px;
+}
+footer .container .con .col1 h3{
+    font-size:25px;
+    font-weight: bold;
+}
+footer .container .con .col1 p{
+    font-size:18px;
+}
+footer .container .con .col1 .emal{
+    display:flex;
+    align-items: center;
+}
+footer .container .con .col1 .emal input{
+    outline:none;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    border-left:2px solid white;
+    border-right:none;
+    padding:10px;
+    background-color: black;
+    color:white;
+    border-radius:3px;
+}
+footer .container .con .col1 .emal i{
+    color:white;
+    font-size:20px;
+    border:2px solid white;
+    border-left:none;
+    padding:9px;
+    border-radius: 3px;
+    position:relative;
+    right:3px;
+}
+footer .container .con .col2 ul,
+footer .container .con .col3 ul,
+footer .container .con .col4 ul
+{
+    list-style-type: none;
+}
+footer .container .con .col2 ul li:first-child,
+footer .container .con .col3 ul li:first-child,
+footer .container .con .col4 ul li:first-child{
+    font-size:25px !important;
+}
+footer .container .con .col2 ul li,
+footer .container .con .col3 ul li,
+footer .container .con .col4 ul li{
+    padding:10px;
+}
+footer .container .con .col2 ul li,
+footer .container .con .col3 ul li,
+footer .container .con .col4 ul li{
+    font-size:18px;
+}
+footer .container .con .col2 ul li a,
+footer .container .con .col3 ul li a,
+footer .container .con .col4 ul li a{
+    text-decoration: none;
+    color:white;
+    transition:0.3s;
+}
+footer .container .con .col2 ul li a:hover,
+footer .container .con .col3 ul li a:hover,
+footer .container .con .col4 ul li a:hover{
+    color:#DB4444;
+    border-bottom:1px solid #DB4444;
+}
+
+footer .container .con .col5 h4{
+    font-size:20px;
+    font-weight:normal;
+}
+footer .container .con .col5 p{
+    color:#dcdcdc;
+}
+footer .container .con .col5 .store{
+    display:flex;
+    align-items: center;
+    gap:30px;
+    justify-content: center;
+    padding:10px;
+}
+footer .container .con .col5 .store i{
+    font-size:30px;
+    padding:10px;
+    color:white;
+    border:2px solid white;
+    border-radius:3px;
+    transition:0.3s;
+}
+footer .container .con .col5 .store i:hover{
+    color:#DB4444;
+}
+footer .container .con .col5 .social{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding-top:50px;
+}
+footer .container .con .col5 .social i{
+    font-size:30px;
+    color:white;
+    transition:0.3s;
+}
+footer .container .con .col5 .social i:hover{
+    color:#DB4444;
+}
+footer .copy-write{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    color:#898989;
+    font-size:18px;
+}
